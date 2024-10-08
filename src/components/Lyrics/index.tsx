@@ -1,16 +1,28 @@
 const LyricsScreen = () => {
-    return (
-        <section id="lyrics" className="w-full flex flex-col items-center sm:items-start">
-            <h2 className="text-3xl font-bold mb-4">Letras das Músicas</h2>
-            <div className="w-full bg-gray-100 p-4 rounded-lg">
-                <h3 className="text-xl font-semibold mb-2">Título da Música</h3>
-                <p>
-                    Verso 1: Lorem ipsum dolor sit amet... <br />
-                    Refrão: Sed ut perspiciatis unde omnis iste...
-                </p>
-            </div>
-        </section>
-    );
+  return (
+    <section id="lyrics" className="w-full py-12">
+      <h2 className="text-3xl font-bold text-center mb-8">Letras das Músicas</h2>
+      <div className="flex justify-center space-x-6">
+        {/* Música 1 */}
+        <div className="flex flex-col items-center">
+          <i className="fas fa-music text-3xl text-blue-600 mb-2"></i> {/* Ícone de música */}
+          <h3 className="text-lg font-semibold">Música 1</h3>
+        </div>
+
+        {/* Música 2 */}
+        <div className="flex flex-col items-center">
+          <i className="fas fa-music text-3xl text-blue-600 mb-2"></i>
+          <h3 className="text-lg font-semibold">Música 2</h3>
+        </div>
+
+        {/* Música 3 */}
+        <div className="flex flex-col items-center">
+          <i className="fas fa-music text-3xl text-blue-600 mb-2"></i>
+          <h3 className="text-lg font-semibold">Música 3</h3>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default LyricsScreen;
